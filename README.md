@@ -1,6 +1,5 @@
 # wyy-app
 仿网易云音乐小程序
-# HLin的云音乐小程序
 
 #### 介绍
 使用wx开发工具和wx文档仿照网易云音乐做的wx小程序。
@@ -31,6 +30,9 @@
 搜索模块:    热点显示，搜索。
 
 歌曲详情模块： 歌曲播放图片，动态效果，上下首切换
+
+#### 相关接口
+https://binaryify.github.io/NeteaseCloudMusicApi/#/?id=neteasecloudmusicapi
 
 #### 安装教程
 3.  命令行 输入 npm start 启动服务端代码 (默认端口为 3000)
