@@ -31,7 +31,7 @@
 
 歌曲详情模块： 歌曲播放图片，动态效果，上下首切换
 
-#### 相关接口
+#### 相关接口API
 https://binaryify.github.io/NeteaseCloudMusicApi/#/?id=neteasecloudmusicapi
 
 #### 安装教程
