@@ -1,0 +1,75 @@
+/* 引入图标库 */
+@import "/static/iconfont/iconfont.wxss";
+
+/* pages/recommendSong/recommendSong.wxss */
+.recommendHeader {
+  width: 100%;
+  position: relative;
+}
+
+.recommendHeader image {
+  width: 100%;
+}
+
+.recommendHeader .date {
+  position: absolute;
+  font-size: 50rpx;
+  color: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* 推荐列表 */
+.recScroll {
+  height: 745rpx;
+}
+
+.recListTop {
+  position: relative;
+  border-radius: 20rpx 20rpx 0 0;
+  margin-top: -30rpx;
+  background-color: #fff;
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.musicItem {
+  position: relative;
+  display: flex;
+  padding: 0 20rpx;
+  align-items: center;
+  margin: 20rpx 0;
+} 
+
+.musicItem image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 10rpx;
+}
+
+.musicInfo {
+  display: flex;
+  flex-direction: column;
+  height: 100rpx;
+  justify-content: space-around;
+  margin-left: 20rpx;
+}
+
+.musicInfo text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 300rpx;
+}
+
+.musicItem .iconfont {
+  position: absolute;
+  right: 20rpx;
+  text-align: center;
+}

@@ -1,0 +1,52 @@
+
+<view>
+  <!-- 头部搜索区 -->
+  <view class="videoHeader" bindtap="toSearch">
+    <image src="/static/images/video/video.jpg"></image>
+    <text>搜索音乐</text>
+    <image src="/static/images/logo.png"></image>
+  </view>
+
+  <!-- 视频推荐导航列表 -->
+  <scroll-view class="videoNav" 
+  scroll-into-view="{{'vi' + navId}}" 
+  scroll-anchoring
+  scroll-with-animation
+  scroll-x 
+  enable-flex
+  >
+    <view class="videoNavItem"
+     wx:for="{{NavList}}"
+     wx:key="id"
+     id="{{'vi' + item.id}}"
+     >
+      <text class="{{item.id == navId ? 'activty' : ''}}" data-id="{{item.id}}" bindtap="setActivity">{{item.name}}</text>
+    </view>
+  </scroll-view>
+
+  <!-- 视频列表 -->
+  <scroll-view 
+  scroll-y 
+  class="videoList"
+  refresher-enabled
+  refresher-triggered="{{isRefresher}}"
+  bindrefresherrefresh="handleRefresh"
+  bindscrolltolower="handleOnLode"
+  > 
+    <view class="videoItem" wx:for="{{videoList}}" wx:key="index">
+      <video 
+      wx:if="{{vId === item.data.vid}}" 
+      id="{{item.data.vid}}" 
+      bindplay="isPlay" 
+      bindtimeupdate="videoAge"
+      bindended="vEnd"
+      src="{{item.data.urlInfo.url}}" 
+      enable-play-gesture
+      autoplay
+      ></video>
+      <image wx:else id="{{item.data.vid}}" bindtap="isPlay" src="{{item.data.coverUrl}}"></image>
+      <text>{{item.data.title}}</text>
+    </view>
+  </scroll-view>
+
+</view>

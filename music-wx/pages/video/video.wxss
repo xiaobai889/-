@@ -1,0 +1,66 @@
+/* pages/video/video.wxss */
+
+/* 头部 */
+.videoHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10rpx 0;
+}
+
+.videoHeader text {
+  border: 1px solid #cccc;
+  border-radius: 10rpx;
+  color: #d43c33;
+  text-align: center;
+  flex: 1;
+  padding: 10rpx;
+}
+
+.videoHeader image {
+  width: 50rpx;
+  height: 50rpx;
+  padding: 10rpx;
+}
+
+/* Nav列表 */
+.videoNav {
+  display: flex;
+  height: 60rpx;
+}
+.videoNav .videoNavItem {
+  padding: 0 20rpx;
+  height: 60rpx;
+}
+.videoNavItem text {
+  line-height: 60rpx;
+  white-space: nowrap;
+  padding-bottom: 10rpx;
+}
+
+.activty {
+  border-bottom: solid 2rpx #d43c33;
+}
+
+/* 视频列表 */
+.videoList {
+  margin-top: 20rpx;
+  height: calc(100vh - 150rpx);
+}
+
+.videoList .videoItem {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 40rpx;
+  margin: 20rpx 0;
+}
+.videoItem video,
+.videoItem image {
+  width: 100%;
+  border-radius: 10rpx;
+}
+.videoItem text {
+  display: block;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #ccc;
+}
