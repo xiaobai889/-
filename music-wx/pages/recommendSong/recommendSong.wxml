@@ -1,7 +1,7 @@
 <view>
   <!-- 头部区域 -->
   <view class="recommendHeader">
-    <image src="/static/images/gg.jpg"></image>
+    <image src="/static/images/bac.jpg"></image>
     <view class="date">
       <text class="month">{{month + " / "}}</text>
       <text class="day">{{day}}</text>
